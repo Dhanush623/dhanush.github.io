@@ -1,7 +1,83 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:url" content="https://helenclx.github.io/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Helen Chong | Front-End Web Developer">
+        <meta property="og:description" content="Welcome to Helen Chong's developer portfolio website.">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon/favicon-32x32.png">
+
+        <link rel="stylesheet" href="assets/css/styles.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
+        <script src="assets/js/app.js" defer></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+        <title>Dhanush Rajamohan | Software Engineer</title>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <h1>Dhanush Rajamohan</h1>
+            <ul class="navbar__list">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="burger-menu" aria-label="Toggle navigation menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+
+        <main>
+            <section class="hero" id="about">
+                <img src="assets/images/dhanush.jpg" alt="" loading="lazy" class="hero__img"/>
+                <div class="hero__bio animate__animated animate__shakeX">
+                    <h2>About Me</h2>
+                    <p class="hero__bio--text">
+                        Hi I am a Dhanush Rajamohan with 5 years of working experience as a Front end and 1 year of working experience as a middleware.
+                    </p>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <h2  class="section__title">My Skills</h2>
+                <div class="skills__wrapper">
+                    <img src="assets/icons/skills/icons8-flutter.svg" alt="Flutter" loading="lazy" class="skills__card skills__icon"/>
+                    <img src="assets/icons/skills/icons8-react-native.svg" alt="React" loading="lazy" class="skills__card skills__icon"/>
+                    <img src="assets/icons/skills/ktor-seeklogo.svg" alt="Ktor" loading="lazy" class="skills__card skills__icon"/>
+                    <img src="assets/icons/skills/icons8-kotlin.svg" alt="Kotlin" loading="lazy" class="skills__card skills__icon"/>
+                    <img src="assets/icons/skills/icons8-html-5.svg" alt="HTML 5" loading="lazy" class="skills__card skills__icon"/>
+                    <img src="assets/icons/skills/icons8-css3.svg" alt="CSS 3" loading="lazy" class="skills__card skills__icon"/>
+                    <img src="assets/icons/skills/icons8-javascript.svg" alt="JavaScript" loading="lazy" class="skills__card skills__icon"/>
+                    <img src="assets/icons/skills/icons8-git.svg" alt="Git" loading="lazy" class="skills__card skills__icon"/>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section class="contact" id="contact">
+                <h2 class="section__title">Get In Touch With Me</h2>
+                <p>E-Mail: <a href="mailto:dhanush623@gmail.com">dhanush623@gmail.com</a></p>
+                <p>Mobile: <a href="tel:+9578268884;ext=91">91-9578268884</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/dhanushraja/" target="_blank">https://linkedin.com/in/dhanushraja/</a></p>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2023 <br>
+                Built with &#x2661; by <a href="https://github.com/Dhanush623" target="_blank">Dhanush Rajamohan</a>
+            </p>
+        </footer>
+
+        <button class="scroll-up hidden" title="Go to top">
+            <img src="assets/icons/top.svg" alt="">
+        </button>
+    </body>
 </html>
