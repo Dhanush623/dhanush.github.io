@@ -285,6 +285,7 @@ main {
 .hero__bio--text {
     line-height: var(--ms-line-height);
     padding: 0.3rem 0;
+    color: #1e1e1e;
 }
 
 /* More about me section */
@@ -336,6 +337,38 @@ main {
 }
 
 .skills__icon {
+	width: 6rem;
+	height: 6rem;
+}
+
+/* Skills section */
+.my__works {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.my__works__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.my__works__wrapper img {
+    padding: 0.8rem;
+}
+
+.my__works__card {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.15rem 0.625rem var(--bs-secondary);
+    padding: 1rem;
+}
+
+.my__works__icon {
 	width: 6rem;
 	height: 6rem;
 }
