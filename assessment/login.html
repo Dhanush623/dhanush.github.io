@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <h1 id="nameDisplay" class="id"></h1>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,18 +44,20 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+
+        id {
+            color: white;
+        }
     </style>
 </head>
+
 <body>
-
-<form id="loginForm">
-    <h2>Login</h2>
-    <input type="text" id="username" placeholder="Username" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <input type="submit" value="Login">
-</form>
-
-<script src="login.js"></script>
-
+    <form id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <script src="login.js"></script>
 </body>
 </html>
