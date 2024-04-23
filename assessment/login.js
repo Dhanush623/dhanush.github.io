@@ -16,7 +16,8 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     if (user) {
         updateName(user.id);
     } else {
-        alert("Invalid username or password");
+        document.getElementById("invalidUser").textContent = "Invalid User";
+
     }
 });
 
