@@ -165,13 +165,20 @@ function displayPurchasedItems(purchasedItems) {
 
         var nameSpan = document.createElement("span");
         nameSpan.textContent = item.name + " (" + item.price.toFixed(2) + ")";
+        nameSpan.id = "nameWithPrice";
         listItem.appendChild(nameSpan);
         var brSpan = document.createElement("br");
         listItem.appendChild(brSpan);
 
         var priceSpan = document.createElement("span");
         priceSpan.textContent = item.quantity;
+        linkSpan.id = "quantity";
         listItem.appendChild(priceSpan);
+        listItem.appendChild(brSpan);
+        var linkSpan = document.createElement("span");
+        linkSpan.textContent = item.link;
+        linkSpan.id = "link";
+        listItem.appendChild(linkSpan);
 
         purchasedList.appendChild(listItem);
     });
