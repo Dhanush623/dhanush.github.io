@@ -117,8 +117,18 @@ function displaySearchResults(results) {
     searchResultsList.innerHTML = ''; // Clear previous results
 
     results.forEach(result => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${result.name} - ${result.price}`;
-        searchResultsList.appendChild(listItem);
+        var listItem = document.createElement("li");
+        var nameSpan = document.createElement("span");
+        nameSpan.textContent = "Name: " + result.name;
+        nameSpan.id = "name";
+        listItem.appendChild(nameSpan);
+
+        var brSpan = document.createElement("br");
+        listItem.appendChild(brSpan);
+
+        var priceSpan = document.createElement("span");
+        priceSpan.textContent = "Price: " + result.price.toFixed(2);
+        priceSpan.id = "price";
+        listItem.appendChild(priceSpan);
     });
 }
