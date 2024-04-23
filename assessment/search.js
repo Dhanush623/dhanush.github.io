@@ -130,5 +130,6 @@ function displaySearchResults(results) {
         priceSpan.textContent = "Price: " + result.price.toFixed(2);
         priceSpan.id = "price";
         listItem.appendChild(priceSpan);
+        searchResultsList.appendChild(listItem);
     });
 }
