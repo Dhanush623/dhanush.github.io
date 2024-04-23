@@ -172,7 +172,7 @@ function displayPurchasedItems(purchasedItems) {
 
         var priceSpan = document.createElement("span");
         priceSpan.textContent = item.quantity;
-        linkSpan.id = "quantity";
+        priceSpan.id = "quantity";
         listItem.appendChild(priceSpan);
         listItem.appendChild(brSpan);
         var linkSpan = document.createElement("span");
