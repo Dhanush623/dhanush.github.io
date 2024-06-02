@@ -683,3 +683,7 @@ footer {
         height: 2.5rem;
     }
 }
+
+.heart {
+    color: red;
+}
