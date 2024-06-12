@@ -341,7 +341,40 @@ main {
 	height: 6rem;
 }
 
-/* Skills section */
+/* Contacts section */
+.contacts {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.contacts__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 0.7rem;
+}
+
+.contacts__wrapper img {
+    padding: 0.8rem;
+}
+
+.contacts__card {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.15rem 0.625rem var(--bs-secondary);
+    padding: 1rem;
+}
+
+.contacts__icon {
+	width: 3rem;
+	height: 3rem;
+}
+
+/* My Works section */
 .my__works {
     max-width: 68.75rem;
     margin: auto;
