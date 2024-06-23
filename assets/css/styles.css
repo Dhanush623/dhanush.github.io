@@ -272,6 +272,9 @@ main {
 .hero__img {
     width: 100%;
     height: auto;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.15rem 0.625rem var(--bs-secondary);
 }
 
 .hero__bio {
