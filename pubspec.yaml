@@ -1,0 +1,52 @@
+name: portfolio
+description: "Dhanush Rajamohan Portfolio"
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  adaptive_theme: ^3.6.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_svg: ^2.0.10+1
+  font_awesome_flutter: ^10.7.0
+  github: ^9.24.0
+  http: ^1.2.2
+  intl: ^0.19.0
+  percent_indicator: ^4.2.3
+  timelines_plus: ^1.0.3
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/
+    - assets/svg/
+    - assets/icons/my_works/
+
+flutter_launcher_icons:
+  web:
+    generate: true
+    image_path: "assets/images/dhanush_rajamohan.jpeg"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+    

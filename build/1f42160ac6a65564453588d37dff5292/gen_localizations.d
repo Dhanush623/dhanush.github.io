@@ -1,0 +1,1 @@
+ /Users/dhanush-595/Documents/Flutterr/portfolio/.dart_tool/flutter_gen/gen_l10n/app_localizations_en.dart /Users/dhanush-595/Documents/Flutterr/portfolio/.dart_tool/flutter_gen/gen_l10n/app_localizations.dart:  /Users/dhanush-595/Documents/Flutterr/portfolio/l10n.yaml /Users/dhanush-595/Documents/Flutterr/portfolio/lib/src/localization/app_en.arb
