@@ -6,29 +6,31 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
+      - uses: subosito/flutter-action@v1
         with:
-          flutter-version: '3.22.3'
+          flutter-version: '1.19.x' 
+          channel: 'beta' # Required for web
 
-      - name: Install dependencies
+      - name: Enable Flutter Web
+        run: flutter config --enable-web
+
+      - name: Download Dependencies
         run: flutter pub get
 
-      - name: Build Flutter web
+      - name: Build
         run: flutter build web
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/web
-          publish_branch: gh-pages  # Branch to deploy to
-          user_name: GitHub Actions
-          user_email: actions@github.com
+          publish_dir: ./build/web
+          force_orphan: true
+          user_name: 'github-ci[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Publish to gh-pages'
