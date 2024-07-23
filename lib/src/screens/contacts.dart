@@ -47,12 +47,6 @@ class Contacts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // ListTile(
-        //   title: Text(
-        //     AppConstants.contact,
-        //     style: Theme.of(context).textTheme.titleLarge,
-        //   ),
-        // ),
         Padding(
           padding: const EdgeInsets.all(8),
           child: Row(

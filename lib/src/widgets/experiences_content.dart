@@ -16,17 +16,17 @@ class ExperiencesContent extends StatelessWidget {
       child: FixedTimeline.tileBuilder(
         theme: TimelineThemeData(
           nodePosition: 0,
-          color: Colors.amber,
           indicatorTheme: const IndicatorThemeData(
             position: 0,
             size: 20.0,
           ),
+          indicatorPosition: 90,
           connectorTheme: const ConnectorThemeData(
             thickness: 2.5,
           ),
         ),
         builder: TimelineTileBuilder.connected(
-          connectionDirection: ConnectionDirection.after,
+          connectionDirection: ConnectionDirection.before,
           itemCount: designations.length,
           contentsBuilder: (_, index) {
             Designation designation = designations[index];
@@ -38,13 +38,22 @@ class ExperiencesContent extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text(
-                        designation.role,
-                        style: Theme.of(context).textTheme.titleMedium,
+                      Expanded(
+                        child: Text(
+                          designation.role,
+                          style: Theme.of(context).textTheme.titleMedium,
+                          overflow: TextOverflow.clip,
+                        ),
                       ),
-                      const Spacer(),
-                      Text(
-                        "${DateFormat(AppConstants.dateFormat).format(designation.startDate)} - ${designation.endDate != null ? DateFormat(AppConstants.dateFormat).format(designation.endDate!) : AppConstants.current}",
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                        child: Text(
+                          "${DateFormat(AppConstants.dateFormat).format(designation.startDate)} - ${designation.endDate != null ? DateFormat(AppConstants.dateFormat).format(designation.endDate!) : AppConstants.current}",
+                          overflow: TextOverflow.clip,
+                          textAlign: TextAlign.end,
+                        ),
                       ),
                     ],
                   ),

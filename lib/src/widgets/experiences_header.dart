@@ -13,13 +13,22 @@ class ExperiencesHeader extends StatelessWidget {
       children: [
         Row(
           children: [
-            Text(
-              experiences.companyName,
-              style: Theme.of(context).textTheme.titleMedium,
+            Expanded(
+              child: Text(
+                experiences.companyName,
+                style: Theme.of(context).textTheme.titleMedium,
+                overflow: TextOverflow.clip,
+              ),
             ),
-            const Spacer(),
-            Text(
-              "${DateFormat(AppConstants.dateFormat).format(experiences.startDate)} - ${experiences.endDate != null ? DateFormat(AppConstants.dateFormat).format(experiences.endDate!) : AppConstants.current}",
+            const SizedBox(
+              width: 10,
+            ),
+            Expanded(
+              child: Text(
+                "${DateFormat(AppConstants.dateFormat).format(experiences.startDate)} - ${experiences.endDate != null ? DateFormat(AppConstants.dateFormat).format(experiences.endDate!) : AppConstants.current}",
+                overflow: TextOverflow.clip,
+                textAlign: TextAlign.end,
+              ),
             ),
           ],
         ),
