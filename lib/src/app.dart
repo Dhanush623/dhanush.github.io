@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Initialize ScreenUtil with context
     ScreenUtil.init(context);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
