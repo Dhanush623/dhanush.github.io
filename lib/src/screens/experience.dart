@@ -20,6 +20,7 @@ class Experience extends StatelessWidget {
         ),
         ListView.builder(
           shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
           itemCount: AppConstants.experiences.length,
           itemBuilder: (context, index) {
             final data = AppConstants.experiences[index];
