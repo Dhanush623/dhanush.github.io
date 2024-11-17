@@ -74,7 +74,10 @@ class AppConstants {
   static DateTime softwareEngnieerLevel2EndDate = DateTime(2023, 3, 31);
   static const String seniorSoftwareEngnieerLevel1 =
       "Senior Software Engnieer Level 1";
+  static const String seniorSoftwareEngnieerLevel2 =
+      "Senior Software Engnieer Level 2";
   static DateTime seniorSoftwareEngnieerLevel1StartDate = DateTime(2023, 4, 1);
+  static DateTime seniorSoftwareEngnieerLevel2StartDate = DateTime(2024, 7, 30);
   static const String softwareEngnieer = "Software Engnieer";
   static DateTime softwareEngnieerStartDate = DateTime(2020, 10, 1);
   static const String softwareEngnieerTrainee = "Software Engnieer Trainee";
@@ -89,10 +92,12 @@ class AppConstants {
   static DateTime atribsEndDate = DateTime(2021, 8, 19);
   static const String msf = "Market Simplified India Limited";
   static DateTime msfStartDate = DateTime(2021, 8, 20);
-  static DateTime msfendDate = DateTime(2024, 7, 25);
+  static DateTime msfendDate = DateTime(2024, 7, 29);
   static String dateFormat = "dd/MMM/yyyy";
   static String current = "Current";
   static String chennai = "Chennai, Tamil Nadu";
+  static const String mx = "MX Build Technologies India Pvt. Ltd";
+  static DateTime mxStartDate = DateTime(2024, 7, 30);
   static List<MenuItem> menuList = [
     MenuItem(title: about),
     MenuItem(title: experience),
@@ -206,6 +211,20 @@ class AppConstants {
     ),
   ];
   static List<ExperienceItem> experiences = [
+    ExperienceItem(
+      companyName: mx,
+      startDate: mxStartDate,
+      mode: modeFullTime,
+      designations: [
+        Designation(
+          role: seniorSoftwareEngnieerLevel2,
+          startDate: seniorSoftwareEngnieerLevel2StartDate,
+          location: chennai,
+          mode: modeFullTime,
+          skills: [ts],
+        ),
+      ],
+    ),
     ExperienceItem(
       companyName: msf,
       startDate: msfStartDate,

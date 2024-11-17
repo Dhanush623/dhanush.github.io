@@ -8,7 +8,7 @@ class ExperienceItem {
   ExperienceItem({
     required this.companyName,
     required this.startDate,
-    required this.endDate,
+    this.endDate,
     required this.mode,
     required this.designations,
   });
