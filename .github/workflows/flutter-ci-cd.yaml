@@ -12,16 +12,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
-      - name: Switch to stable channel
-        run: |
-          flutter channel stable
-          flutter upgrade  # Ensure that the latest stable version of Flutter is used
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.10.0'
+
+      - name: Switch to stable channel
+        run: |
+          flutter channel stable
+          flutter upgrade  # Ensure that the latest stable version of Flutter is used
+
 
       - name: Verify Flutter and Dart SDK versions
         run: |
