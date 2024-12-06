@@ -21,9 +21,8 @@ jobs:
       - name: Switch to stable channel
         run: |
           flutter channel stable
-          flutter upgrade  # Ensure that the latest stable version of Flutter is used
-
-
+          flutter upgrade
+          
       - name: Verify Flutter and Dart SDK versions
         run: |
           flutter --version
