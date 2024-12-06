@@ -76,6 +76,8 @@ class AppConstants {
       "Senior Software Engnieer Level 1";
   static const String seniorSoftwareEngnieerLevel2 =
       "Senior Software Engnieer Level 2";
+  static const String seniorSoftwareEngnieerLevel3 =
+      "Senior Software Engnieer Level 3";
   static DateTime seniorSoftwareEngnieerLevel1StartDate = DateTime(2023, 4, 1);
   static DateTime seniorSoftwareEngnieerLevel2StartDate = DateTime(2024, 7, 30);
   static const String softwareEngnieer = "Software Engnieer";
@@ -217,7 +219,7 @@ class AppConstants {
       mode: modeFullTime,
       designations: [
         Designation(
-          role: seniorSoftwareEngnieerLevel2,
+          role: seniorSoftwareEngnieerLevel3,
           startDate: seniorSoftwareEngnieerLevel2StartDate,
           location: chennai,
           mode: modeFullTime,
